@@ -10,14 +10,14 @@
  * please view the LICENSE file that was distributed with this source code.
  */
 
-namespace WellCommerce\Bundle\DictionaryBundle\Manager\Admin;
+namespace WellCommerce\Bundle\DictionaryBundle\Manager;
 
 use Doctrine\Common\Collections\Criteria;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\HttpKernel\KernelInterface;
 use Symfony\Component\PropertyAccess\PropertyAccess;
 use Symfony\Component\Yaml\Yaml;
-use WellCommerce\Bundle\CoreBundle\Manager\Admin\AbstractAdminManager;
+use WellCommerce\Bundle\CoreBundle\Manager\AbstractManager;
 use WellCommerce\Bundle\DictionaryBundle\Entity\DictionaryInterface;
 use WellCommerce\Bundle\LocaleBundle\Entity\LocaleInterface;
 
@@ -26,7 +26,7 @@ use WellCommerce\Bundle\LocaleBundle\Entity\LocaleInterface;
  *
  * @author  Adam Piotrowski <adam@wellcommerce.org>
  */
-class DictionaryManager extends AbstractAdminManager
+class DictionaryManager extends AbstractManager
 {
     /**
      * @var KernelInterface
